@@ -1,0 +1,10 @@
+button.slick-next.slick-arrow{
+	z-index: 2;
+	transform: scale(2);
+    right: 50px;
+}
+button.slick-prev.slick-arrow{
+	z-index: 2;
+	transform: scale(2);
+    left: 50px;
+}
