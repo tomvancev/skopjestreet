@@ -46,10 +46,28 @@ gulp.task('optimizeImages',['deleteDistFolder'],function(){
 
 gulp.task('useminTrigger',['deleteDistFolder'],function(){
 	gulp.start("usemin");
+	gulp.start("usemin1");
+	gulp.start("usemin2");
 });
 
 gulp.task('usemin',['styles','scripts'],function(){
 	return gulp.src("./app/index.html")
+		.pipe(usemin({
+			css:[function(){return rev()},function(){return cssnano()}],
+			js:[function(){return rev()},function(){return uglify()}]
+		}))
+		.pipe(gulp.dest('./docs'));
+});
+gulp.task('usemin1',['usemin'],function(){
+	return gulp.src("./app/single.html")
+		.pipe(usemin({
+			css:[function(){return rev()},function(){return cssnano()}],
+			js:[function(){return rev()},function(){return uglify()}]
+		}))
+		.pipe(gulp.dest('./docs'));
+});
+gulp.task('usemin2',['usemin'],function(){
+	return gulp.src("./app/blog.html")
 		.pipe(usemin({
 			css:[function(){return rev()},function(){return cssnano()}],
 			js:[function(){return rev()},function(){return uglify()}]
