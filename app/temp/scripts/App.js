@@ -13301,8 +13301,7 @@ var SlickSlider = function SlickSlider() {
 
 	(0, _jquery2.default)('.ssf-gallery').slick({
 		arrows: true,
-		autoplay: true,
-		dots: true
+		autoplay: true
 
 	});
 };

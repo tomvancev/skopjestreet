@@ -9,6 +9,15 @@
 			float:right;
 		}
 	}
+	&--black {
+		background-color: #000;
+	}
+	&--centered {
+		ul{
+			display: flex;
+			justify-content: center;
+		}
+	}
 
 	ul {
 		margin:0;
@@ -42,7 +51,7 @@
 		font-weight: 300;
 		@mixin atMedium{
 			padding:12px 0;
-			font-size: 1rem;
+			font-size: 1.4rem;
 			background-color:transparent;
 			&.is-current-link {
 				color:#fabb69;

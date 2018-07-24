@@ -4,8 +4,7 @@ class SlickSlider {
 
 		$('.ssf-gallery').slick({
 			arrows: true,
-			autoplay:true,
-			dots:true
+			autoplay:true
 
 		});
 		

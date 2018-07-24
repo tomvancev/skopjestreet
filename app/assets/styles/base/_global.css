@@ -15,3 +15,11 @@ img {
 a{
 	color:$mainOrange;
 }
+
+.text-center {
+	text-align: center;
+}
+
+.no-b-margin {
+	margin-bottom: 0;
+}

@@ -8,3 +8,12 @@ button.slick-prev.slick-arrow{
 	transform: scale(2);
     left: 50px;
 }
+
+.slick-slide {
+   height:600px;
+}
+
+.slick-slide img {
+   height:600px;
+   width:100%;
+}
